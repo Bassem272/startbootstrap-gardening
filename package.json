@@ -1,0 +1,14 @@
+{
+  "name": "garden-tiles-front-end",
+  "version": "1.0.0",
+  "description": "front end page for garden website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bassem",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

@@ -52,3 +52,42 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navbarToggler = document.getElementById('navbar-toggler');
+    const lottieIcon1 = document.getElementById('whatsapp');
+    const lottieIcon2 = document.getElementById('call');
+  
+    let isIconsTranslated = false;
+  
+    navbarToggler.addEventListener('click', function () {
+      if (isIconsTranslated) {
+        // If icons are already translated, reset their positions
+        resetIconsPosition();
+      } else {
+        // If icons are not translated, move them to the middle of the screen
+        translateIconsToMiddle();
+      }
+  
+      // Toggle the state
+      isIconsTranslated = !isIconsTranslated;
+    });
+  
+    function translateIconsToMiddle() {
+      // Calculate the middle position based on the window size
+      const middleX = window.innerWidth / 2 - lottieIcon1.clientWidth / 2;
+      const middleY = window.innerHeight / 2 - lottieIcon1.clientHeight / 2;
+  
+      // Apply translation to the middle position
+      lottieIcon1.style.transform = `translate(${middleX}px, ${middleY}px)`;
+      lottieIcon2.style.transform = `translate(${middleX}px, ${middleY}px)`;
+    }
+  
+    function resetIconsPosition() {
+      // Reset icons to their original positions
+      lottieIcon1.style.transform = 'translate(0, 0)';
+      lottieIcon2.style.transform = 'translate(0, 0)';
+    }
+  });
+  

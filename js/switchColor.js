@@ -1,55 +1,57 @@
-// document.querySelector('.switch').addEventListener('click', toggleColor);
-
-
 var elementsToChange = [
-    document.getElementById("portfolio"),
-    document.getElementById("page-top"),
-    document.getElementById("team"),
-    document.getElementsByTagName("h2"),
-    document.getElementsByTagName("h3"),
-    document.getElementsByTagName("h4"),
-    document.getElementsByTagName("h5"),
-    document.getElementsByTagName("h6"),
-    document.getElementsByTagName("p"),
+  document.getElementById("portfolio"),
+  document.getElementById("page-top"),
+  document.getElementById("team"),
 
-    // Add other elements as needed
-  ];
-  let counter =0; 
-  console.log(counter);
-  
-  var originalColors = {}; // Store original colors for each element
-  var isColorChanged = false;
-  
-  function toggleColor(input) {
-      // event.preventDefault();
-      console.log("I am clicked");
-      console.log("I am alive");
-      counter++; 
-      let change = counter%2;
-      console.log({counter, change});
-      
-    elementsToChange.forEach(function (element) {
-      if (!originalColors[element]) {
-        // Save the original color on the first click
-        originalColors[element] = window.getComputedStyle(element).backgroundColor;
+  ...document.querySelectorAll("h2, h3, h4, h5, h6, p, .text-muted"),
+  // Add other elements as needed
+];
+
+var isColorChanged = false;
+
+function toggleColor(input) {
+  console.log("Toggle Color Clicked");
+  elementsToChange.forEach(function (element) {
+    // Check if the element has the class 'portfolio-item' or other classes you want to exclude
+    if (
+      element.classList.contains("portfolio-item") ||
+      element.classList.contains("portfolio-caption-heading") ||
+      element.classList.contains("portfolio-caption-subheading") ||
+      element.classList.contains("bepartof")
+    ) {
+      // Skip this element
+      return;
+    }
+
+    // Add transition class to elements
+    element.classList.add("color-transition");
+
+    if (!isColorChanged) {
+      // Light mode
+      element.classList.remove("bg-dark", "text-white");
+      if (element.classList.contains("text-muted")) {
+        element.classList.add("text-muted");
       }
-  
-      if (change == 0) {
-        // Apply light mode
-        element.classList.remove('bg-dark');
-        element.classList.remove('text-white');
-        element.classList.add('bg-light');
-        // element.classList.add('text-dark');
-      } else {
-         console.log('ia  changed')
-        // Apply dark mode
-        element.classList.add('bg-dark');
-        element.classList.add('text-white');
-        element.classList.remove('bg-light');
-        // element.classList.remove('text-dark');
+      // if (element.classList.contains("go")) {
+      //   element.classList.remove("btn-light");
+      //   element.classList.add("btn-dark");
+      //   return;
+      // }
+      element.classList.add("bg-light", "text-dark");
+    } else {
+      // Dark mode
+      element.classList.remove("bg-light", "text-dark");
+      if (element.classList.contains("text-muted")) {
+        element.classList.remove("text-muted");
       }
-    });
-  
-    isColorChanged = !isColorChanged; // Toggle the state
-  }
-  
+      // if (element.classList.contains("go")) {
+      //   element.classList.remove("btn-dark");
+      //   element.classList.add("btn-light");
+      //   return;
+      // }
+      element.classList.add("bg-dark", "text-white");
+    }
+  });
+
+  isColorChanged = !isColorChanged;
+}

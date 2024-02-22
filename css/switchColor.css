@@ -105,3 +105,9 @@
   .input:checked + .slider:before {
     transform: translateX(30px);
   }
+
+
+  .color-transition {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  

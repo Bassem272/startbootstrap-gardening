@@ -31,6 +31,7 @@
         <link href="css/switchColor.css" rel="stylesheet" />
         <link href="css/floatingIcons.css" rel="stylesheet" />
         <link href="css/ctabutton.css" rel="stylesheet" />
+        <link href="css/contactBtns.css" rel="stylesheet" />
      
     </head>
     <body id="page-top">
@@ -91,7 +92,7 @@
                     <!-- <i class="fa-solid fa-spa fa-xl" style="color: #0da041;"></i> -->
                     <!-- <i class="fa-duotone fa-spa" style="--fa-primary-color: #0da041; --fa-secondary-color: #0da041;"></i> -->
                 </div>
-                <a class=" btn btn-primary btn-xl text-uppercase  bg-success " href="#services">اخبرني المزيد </a>
+                <a class=" btn btn-primary btn-xl text-uppercase  bg-success roundStyle" href="#services">اخبرني المزيد </a>
             </div>
         </header>
         <!-- Services-->
@@ -277,7 +278,7 @@
                     </div>
                 </div>
                  
-                <div class="row">
+                <div class="row mt-4">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
@@ -381,7 +382,7 @@
                     </div>
                 </div>
                  
-                <div class="row">
+                <div class="row mt-4">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
@@ -539,8 +540,8 @@
                             </p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image bg-success">
+                    <li class="timeline-inverted ">
+                        <div class="timeline-image bg-success ">
                             <h4 class="heading bepartof ">
                                 كن جزءًا
                                 <br />
@@ -593,7 +594,7 @@
 
 
 
-<section id="contactUs" class="container mt-5 mx-auto bg-transparent">
+<section id="contactUs" class="container mt-5 mx-auto contactStyle">
     <h2 class="text-center">اتصل بنا</h2>
 
     <!-- Contact Details and Map -->
@@ -616,9 +617,13 @@
                 <!-- Call to Action -->
                 <div class="row text-center mt-5">
                     <div class="col-md-6">
-                        <button class="btn btn-success btn-block">
-                            <i class="fas fa-phone-alt"></i> اتصل الآن
-                        </button>
+                        <a href="tel:+2010547607344"  >
+                           
+                        
+                            <button class="btn btn-success btn-block">
+                                <i class="fas fa-phone-alt"></i> اتصل الآن
+                            </button>
+                        </a>
                     </div>
                     <!-- WhatsApp Button -->
                     <div class="col-md-6 mt-1">
@@ -645,7 +650,7 @@
 
         <!-- Team-->
         <section class="page-section bg-light" id="team">
-            <footer class="footer py-4 ">
+            <footer class="footer py-4 footerStyle">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-4 text-lg-start">Copyright &copy; حدائق الجمال 2024</div>
@@ -1419,6 +1424,25 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Find the maximum height among all .portfolio-caption elements
+        var maxCaptionHeight = 0;
+
+        $('.portfolio-caption').each(function() {
+            var currentHeight = $(this).height();
+            if (currentHeight > maxCaptionHeight) {
+                maxCaptionHeight = currentHeight;
+            }
+        });
+
+        // Set the height of all .portfolio-caption elements to the maximum height
+        $('.portfolio-caption').height(maxCaptionHeight);
+    });
+</script>
+
 
        
     </body>

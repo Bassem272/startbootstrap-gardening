@@ -11237,7 +11237,7 @@ p {
   /* transition: background-color 0.5s ease; */
   /* border-radius: 50px; */
   /* background: linear-gradient(145deg, #982983, #b5309c); */
-  box-shadow: 3px 3px 3px whitesmoke;
+  /* box-shadow: 3px 3px 3px whitesmoke; */
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;

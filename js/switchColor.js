@@ -1,8 +1,19 @@
 // Add this function to set the initial state
+let links = [];
+let modals = [];
+
 function setInitialState() {
   var input = document.querySelector(".input");
   toggleColor(input);
+  links = document.querySelectorAll(".link"); // Use querySelector to get the first element with class "link"
+  modals = document.querySelectorAll(".modal-content");
+  if (modals) {
+    console.log("Modals found");
+  } else {
+    console.log("No modals found");
+  }
 }
+
 
 // Call the setInitialState function when the page loads
 document.addEventListener("DOMContentLoaded", setInitialState);
@@ -12,14 +23,12 @@ let elementsToChange = [
   document.getElementById("portfolio"),
   document.getElementById("page-top"),
   document.getElementById("team"),
-
   ...document.querySelectorAll("h2, h3, h4, h5, h6, p, .text-muted, .go"),
   // Add other elements as needed
 ];
 
 var isColorChanged = false;
 
-let links = document.querySelectorAll(".link"); // Use querySelector to get the first element with class "link"
 function toggleColor(input) {
   // link.classList.toggle("link-dark");
   // link.classList.toggle("link-light");
@@ -42,7 +51,7 @@ function toggleColor(input) {
 
     if (!isColorChanged) {
       // Light mode
-      changeLink();
+      // changeLink();
       element.classList.remove("bg-dark", "text-white");
       if (element.classList.contains("text-muted")) {
         element.classList.add("text-muted");
@@ -68,6 +77,15 @@ function toggleColor(input) {
         });
       } else {
         console.error("Link not found");
+      }
+      if (modals) {
+        //  console.log(link);
+        modals.forEach(function (element) {
+          element.classList.remove("bg-dark");
+          element.classList.add("bg-light");
+        });
+      } else {
+        console.error("modal content not found");
       }
     } else {
       // Dark mode
@@ -97,24 +115,43 @@ function toggleColor(input) {
       } else {
         console.error("Link not found");
       }
+      if (modals) {
+        //  console.log(link);
+        modals.forEach(function (element) {
+          element.classList.add("bg-dark");
+          element.classList.remove("bg-light");
+        });
+      } else {
+        console.error("modal content not found");
+      }
     }
   });
 
   isColorChanged = !isColorChanged;
 }
 
-function changeLink() {
-  let links = document.querySelectorAll(".link"); // Use querySelector to get the first element with class "link"
-  if (links) {
-    //  console.log(link);
-    links.forEach(function (element) {
-      element.classList.toggle("link-light");
-      element.classList.toggle("link-dark");
-    });
-  } else {
-    console.error("Link not found");
-  }
-}
+// function changeLink() {
+//   let links = document.querySelectorAll(".link"); // Use querySelector to get the first element with class "link"
+//   if (links) {
+//     //  console.log(link);
+//     links.forEach(function (element) {
+//       element.classList.toggle("link-light");
+//       element.classList.toggle("link-dark");
+//     });
+//   } else {
+//     console.error("Link not found");
+//   }
+//   if (modals) {
+//     console.log("modals is here ");
+//     modals.forEach(function (element) {
+//       console.log("modals is insider ");
+//       element.classList.add("bg-dark");
+//       element.classList.remove("bg-light");
+//     });
+//   } else {
+//     console.error("modal content not found");
+//   }
+// }
 
 // function changeSocialIcons(){
 //   var socialIcons = document.querySelectorAll('go');

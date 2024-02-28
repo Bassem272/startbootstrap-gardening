@@ -75,3 +75,26 @@
       transform: scale(1);
     }
   }
+
+
+  /* gogle icons */
+              /* Additional CSS for hover effects */
+              .btn-success:hover {
+                background-color: #28a745;
+                border-color: #28a745;
+            }
+    
+            .btn-success:hover i {
+                color: #ffffff;
+            }
+            .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 1,
+        'opsz' 100;
+}
+span.size-70{
+  font-size:80px;
+  font-variation-settings: 'OPSZ' 80;
+}

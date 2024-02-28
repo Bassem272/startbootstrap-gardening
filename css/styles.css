@@ -8266,7 +8266,7 @@ fieldset:disabled .btn {
 }
 
 .fst-italic {
-  font-style: italic !important;
+  font-style: normal !important;
 }
 
 .fst-normal {
@@ -11430,7 +11430,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-  font-style: italic;
+  font-style: normal;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

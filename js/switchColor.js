@@ -76,7 +76,7 @@ function toggleColor(input) {
           element.classList.remove("link-light");
         });
       } else {
-        console.error("Link not found");
+        console.log("Link not found");
       }
       if (modals) {
         //  console.log(link);
@@ -85,7 +85,7 @@ function toggleColor(input) {
           element.classList.add("bg-light");
         });
       } else {
-        console.error("modal content not found");
+        console.log("modal content not found");
       }
     } else {
       // Dark mode
@@ -113,7 +113,7 @@ function toggleColor(input) {
           element.classList.add("link-light");
         });
       } else {
-        console.error("Link not found");
+        console.log("Link not found");
       }
       if (modals) {
         //  console.log(link);
@@ -122,7 +122,7 @@ function toggleColor(input) {
           element.classList.remove("bg-light");
         });
       } else {
-        console.error("modal content not found");
+        console.log("modal content not found");
       }
     }
   });

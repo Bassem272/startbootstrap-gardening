@@ -12,15 +12,28 @@ window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
+        const navLinks = document.body.querySelectorAll('.nav-link')
         if (!navbarCollapsible) {
             return;
         }
         if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
+            // navbarCollapsible.classList.remove('navbar-shrink')
+            navLinks.forEach(function(link) {
+              link.classList.add("text-warning");  
+              link.classList.add("font-weight-bold");  
+              console.log("change");
+            })
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
+            navLinks.forEach(function(link) {
+                if(link.classList.contains("text-dark") && link.classList.contains("font-weight-bold") ) {
+                    link.classList.remove("text-info");  
+                    link.classList.remove("font-weight-bold");  
+                }
+                })
+            // links.classList.add("text-white");  
+            console.log('moved and dark')
         }
-
     };
 
     // Shrink the navbar 
@@ -53,6 +66,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// this was added by bassem for the floating icons
 
 document.addEventListener('DOMContentLoaded', function () {
     const navbarToggler = document.getElementById('navbar-toggler');

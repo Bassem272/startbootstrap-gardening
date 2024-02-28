@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gallery</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/icons8-leaf-96.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/gridGallery.scss" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/floatingIcons.css">
+    <link rel="stylesheet" href="css/icons.css">
+          <!-- Core theme CSS (includes Bootstrap)-->
+          <link href="css/icons.css" rel="stylesheet" />
+          <link href="css/styles.css" rel="stylesheet" />
+          <link href="css/testcard.css" rel="stylesheet" />
+          <link href="css/switchColor.css" rel="stylesheet" />
+          <link href="css/floatingIcons.css" rel="stylesheet" />
+          <link href="css/ctabutton.css" rel="stylesheet" />
+    
+  </head>
+  <body id="gallery">
+           <!-- the floating calling and whatsapp icons * * * *  * ** * * *  * * * * * * ** -->
+           <a href="https://wa.me/1234567890" target="_blank" id="whatsapp">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/0174ff14-1efc-4257-b2d8-a40476df083c/z2DVD1odTZ.json" background="##fff" speed="1" style="width: 100px; height: 100px" loop  autoplay direction=".11" mode="normal"></lottie-player>            <!-- <img id="whatsapp" src="assets/whatsapp.svg" alt="WhatsApp Icon"> -->
+        </a>
+        
+        
+        <a href="tel:+1234567890"  id= "call">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/acef6c9c-57ea-47f4-ae38-dd3ea948dd5f/BhO1wQnfpq.json" background="##fff" speed="1" style="width: 100px; height: 100px" loop autoplay direction=".11" mode="normal" ></lottie-player>
+    </a>
+   
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg    " id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <button class="navbar-toggler bt-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        
+                        <!-- <li class="nav-item"><a class="nav-link" href="#services"><i class="fa-brands fa-whatsapp fa-beat fa-2xl" style="color: #63E6BE;"></i></a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="#services"><i class="fab fa-whatsapp fa-2x" style="color: #25D366;"></i>
+                        </a></li> -->
+                        <li class="nav-item"><a class="nav-link " href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><label class="switch" >
+                            <span class= "sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                            <input type="checkbox" class="input" onchange="toggleColor(this)">
+                            <span class="slider"></span>
+                        </label>
+                 
+                </div>
+            </div>
+        </nav>
+                 
+     
+   
+         <!-- here we go  -->
+         <section class="page-section bg-light " id="portfolio">
+          <div class="container">
+              <div class="text-center">
+                  <h2 class="section-heading text-uppercase">معرض الاعمال</h2>
+                  <h3 class="section-subheading text-muted">
+                      استعرض أعمالنا في معرض الصور وشاهد كيف يمكننا تحويل الفضاء الخارجي إلى لوحة فنية. اتصل بنا اليوم للبدء في تحقيق حلمك الخاص بحديقة خلابة.</h3>
+              </div>
+              
+              <div class="row">
+                  <div class="col-lg-4 col-sm-6 mb-4">
+                      <!-- Portfolio item 1-->
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              <div class="portfolio-caption-heading text-dark">Threads</div>
+                              <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4">
+                      <!-- Portfolio item 2-->
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              <div class="portfolio-caption-heading text-dark">Explore</div>
+                              <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4">
+                      <!-- Portfolio item 3-->
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              <div class="portfolio-caption-heading text-dark">Finish</div>
+                              <div class="portfolio-caption-subheading text-muted">Identity</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                      <!-- Portfolio item 4-->
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              <div class="portfolio-caption-heading text-dark">Lines</div>
+                              <div class="portfolio-caption-subheading text-muted">Branding</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                      <!-- Portfolio item 5-->
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              <div class="portfolio-caption-heading text-dark ">Southwest</div>
+                              <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                      <!-- Portfolio item 6-->
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="assets/gardens/Aravaca_.jfif" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              <div class="portfolio-caption-heading text-dark">Window</div>
+                              <div class="portfolio-caption-subheading text-muted">Photography</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+        <!-- Footer-->
+        <footer class="footer py-4">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
+                  <div class="col-lg-4 my-3 my-lg-0">
+                      <a class="btn btn-dark btn-social mx-2 go" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-dark btn-social mx-2 go" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-dark btn-social mx-2 go" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  
+                  <div class="col-lg-4 text-lg-end">
+                      <a class="link-dark text-decoration-none me-3 link" href="#!">Privacy Policy</a>
+                      <a class="link-dark text-decoration-none link" href="#!">Terms of Use</a>
+                     
+                      
+                  </div>
+              </div>
+          </div>
+      </footer>
+         <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <div class="modal-body">
+                                  <!-- Project details-->
+                                  <h2 class="text-uppercase">Project Name</h2>
+                                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                  <ul class="list-inline">
+                                      <li>
+                                          <strong>Client:</strong>
+                                          Threads
+                                      </li>
+                                      <li>
+                                          <strong>Category:</strong>
+                                          Illustration
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                      <i class="fas fa-xmark me-1"></i>
+                                      Close Project
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Portfolio item 2 modal popup-->
+      <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <div class="modal-body">
+                                  <!-- Project details-->
+                                  <h2 class="text-uppercase">Project Name</h2>
+                                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                  <ul class="list-inline">
+                                      <li>
+                                          <strong>Client:</strong>
+                                          Explore
+                                      </li>
+                                      <li>
+                                          <strong>Category:</strong>
+                                          Graphic Design
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                      <i class="fas fa-xmark me-1"></i>
+                                      Close Project
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Portfolio item 3 modal popup-->
+      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <div class="modal-body">
+                                  <!-- Project details-->
+                                  <h2 class="text-uppercase">Project Name</h2>
+                                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                  <ul class="list-inline">
+                                      <li>
+                                          <strong>Client:</strong>
+                                          Finish
+                                      </li>
+                                      <li>
+                                          <strong>Category:</strong>
+                                          Identity
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                      <i class="fas fa-xmark me-1"></i>
+                                      Close Project
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Portfolio item 4 modal popup-->
+      <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <div class="modal-body">
+                                  <!-- Project details-->
+                                  <h2 class="text-uppercase">Project Name</h2>
+                                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                  <ul class="list-inline">
+                                      <li>
+                                          <strong>Client:</strong>
+                                          Lines
+                                      </li>
+                                      <li>
+                                          <strong>Category:</strong>
+                                          Branding
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                      <i class="fas fa-xmark me-1"></i>
+                                      Close Project
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Portfolio item 5 modal popup-->
+      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <div class="modal-body">
+                                  <!-- Project details-->
+                                  <h2 class="text-uppercase">Project Name</h2>
+                                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                  <ul class="list-inline">
+                                      <li>
+                                          <strong>Client:</strong>
+                                          Southwest
+                                      </li>
+                                      <li>
+                                          <strong>Category:</strong>
+                                          Website Design
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                      <i class="fas fa-xmark me-1"></i>
+                                      Close Project
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Portfolio item 6 modal popup-->
+      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <div class="modal-body">
+                                  <!-- Project details-->
+                                  <h2 class="text-uppercase">Project Name</h2>
+                                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                  <img class="img-fluid d-block mx-auto" src="assets/gardens/Aravaca_.jfif" alt="..." />
+                                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                  <ul class="list-inline">
+                                      <li>
+                                          <strong>Client:</strong>
+                                          Window
+                                      </li>
+                                      <li>
+                                          <strong>Category:</strong>
+                                          Photography
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                      <i class="fas fa-xmark me-1"></i>
+                                      Close Project
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+           <!-- Bootstrap core JS-->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+           <!-- Core theme JS-->
+           <script src="js/scripts.js"></script>
+           <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+           <!-- * *                               SB Forms JS                               * *-->
+           <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+           <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+           <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+           <script src = "js/switchColor.js"></script>
+           <!-- translation* ** **** ***** *** **** ** * -->
+  </body>
+</html>
+
+
+<!-- <div class="card">
+    <div class="card-info">
+      <img
+        src="assets/gardens/10.jfif"
+        style="width: 190px; height: 300px"
+        alt="" -->
+      <!-- /> -->
+      <!-- <div class="card-avatar"></div> -->
+      <!-- <div class="card-title">Steve Jobs</div> -->
+      <!-- <div class="card-subtitle">CEO &amp; Co-Founder</div> -->
+    <!-- </div> -->
+    <!-- <ul class="card-social">
+        <li class="card-social__item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z"></path>
+      </svg></li>
+      <li class="card-social__item">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z"></path>
+    </svg></li>
+    <li class="card-social__item">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"></path>
+      </svg>
+    </li>
+  </ul> -->
+  <!-- </div> -->

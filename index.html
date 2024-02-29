@@ -57,10 +57,16 @@
                 <!-- <a class="navbar-brand" href="#page-top"><img src="assets/logo3.png" alt="..." /></a> -->
                 <!-- <a class="navbar-brand" href="#page-top"><img src="assets/logo3.png" alt="..." /></a> -->
                 <!-- <a class="navbar-brand" href="#page-top"><img src="assets/logo3.png" alt="..." /></a> -->
-                <button class="navbar-toggler bt-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button style="background-color:#212529" class="navbar-toggler btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     القائمة
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
+                    <i class="fas fa-bars ms-1" style="font-size: 24px;color:white"></i>
+                </button> -->
+                <!-- HTML -->
+<button id="navbarToggleBtn" style="background-color:#212529" class="navbar-toggler btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- القائمة -->
+    <i id="barsIcon" class="fas fa-bars ms-1" style="font-size: 24px; color: white"></i>
+</button>
+
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         
@@ -595,23 +601,23 @@
 
 
 <section id="contactUs" class="container mt-5 mx-auto contactStyle">
-    <h2 class="text-center">اتصل بنا</h2>
+    <h2 class="text-center contactElement">اتصل بنا</h2>
 
     <!-- Contact Details and Map -->
     <div class="row mx-auto">
         <!-- Contact Details -->
         <div class="col-md-5">
-            <div class="contact-details mt-4">
+            <div class="contact-details mt-4 ">
                 <!-- <p>البريد الإلكتروني: info@example.com</p> -->
-                <p>الهاتف: 0547607344</p>
-                <p>أبو ظبي
+                <p class="contactElement" >الهاتف: 0547607344</p>
+                <p class="contactElement">أبو ظبي
                     الإمارات العربية المتحدة</p>
 
                 <!-- Business Hours -->
                 <div class="business-hours mt-4">
-                    <p>الاثنين - الجمعة: 9:00 صباحًا - 5:00 مساءً</p>
-                    <p>السبت: 10:00 صباحًا - 2:00 مساءً</p>
-                    <p>الأحد: مغلق</p>
+                    <p class="contactElement">الاثنين - الجمعة: 9:00 صباحًا - 5:00 مساءً</p>
+                    <p class="contactElement">السبت: 10:00 صباحًا - 2:00 مساءً</p>
+                    <p class="contactElement">الأحد: مغلق</p>
                 </div>
 
                 <!-- Call to Action -->
@@ -626,7 +632,7 @@
                         </a>
                     </div>
                     <!-- WhatsApp Button -->
-                    <div class="col-md-6 mt-1">
+                    <div class="col-md-6 mt-1 ">
                         <a href="https://wa.me/+201004647439" target="_blank">
                         <button  class="btn btn-success btn-block">
                                     <i class="fab fa-whatsapp "></i> واتساب
@@ -1441,6 +1447,24 @@
         // Set the height of all .portfolio-caption elements to the maximum height
         $('.portfolio-caption').height(maxCaptionHeight);
     });
+
+    // JavaScript (with jQuery for Bootstrap)
+$(document).ready(function() {
+    $('#navbarToggleBtn').on('click', function() {
+        $('#barsIcon').toggleClass('rotated');
+    });
+});
+// // JavaScript
+// document.addEventListener('DOMContentLoaded', function() {
+//     var navbarToggleBtn = document.getElementById('navbarToggleBtn');
+//     var barsIcon = document.getElementById('barsIcon');
+
+//     navbarToggleBtn.addEventListener('click', function() {
+//         barsIcon.classList.toggle('rotated');
+//     });
+// });
+
+
 </script>
 
 

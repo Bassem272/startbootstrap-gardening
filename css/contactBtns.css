@@ -33,6 +33,7 @@
   /* background: #ffffff; */
   box-shadow: -5px 5px 10px #e3e3e3, 5px -5px 10px #ffffff;
   transition: box-shadow 0.3s ease;
+  /* transform: translateY(-5px); */
 }
 .footerStyle {
   border-radius: 0px;
@@ -76,7 +77,7 @@
 }
 
 .bg-dark .contactStyle:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.3s ease;
 }
@@ -96,7 +97,7 @@
   background: linear-gradient(45deg, #211f20, #282425);
 }
 .bg-dark .contactElement:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   transition: box-shadow 5s ease-in-out;
 }

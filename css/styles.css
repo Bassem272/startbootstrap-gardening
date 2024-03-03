@@ -113,6 +113,25 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* this is the google fonts >>>>>>>>>>>>>>>> */
+/* google icons */
+/* Additional CSS for hover effects */
+.btn-success:hover {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover i {
+  color: #ffffff;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 1, "opsz" 100;
+}
+span.size-70 {
+  font-size: 80px;
+  font-variation-settings: "OPSZ" 80;
+}
+/* end google */
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -11741,3 +11760,324 @@ section#contact form#contactForm :-ms-input-placeholder {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+
+/* switchColor>>>>>>>>>>>>>>>>> */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+  z-index: 10000;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73C0FC;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: .4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 6px;
+  left: 36px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.moon svg {
+  fill: #73C0FC;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+/* .switch:hover */.sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+ 
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .switch:hover */.moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+ 
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input:checked + .slider {
+  background-color: #183153;
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+
+.color-transition {
+  transition: background-color 0.3s, color 0.3s;
+}
+/* contactBtns.css >>>>>>>>>>>>>>>>>>>>>>*/
+/* Add this CSS to your stylesheet */
+
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, color 0.3s ease;
+  border-radius: 25px; /* Adjust the border-radius for roundness */
+}
+
+.btn-success {
+  background-color: #4caf50; /* Change the background color to your preferred color */
+  color: white;
+}
+
+.btn-success:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.7); /* Adjust shadow color */
+  background-color: #45a049; /* Adjust hover background color */
+}
+
+.btn-whatsapp {
+  background-color: #25d366; /* WhatsApp color */
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.7); /* Adjust shadow color */
+  background-color: #128c7e; /* Adjust hover background color */
+}
+
+.contactStyle {
+  border-radius: 0px;
+  /* background: #ffffff; */
+  box-shadow: -5px 5px 10px #e3e3e3, 5px -5px 10px #ffffff;
+  transition: box-shadow 0.3s ease;
+  /* transform: translateY(-5px); */
+}
+.footerStyle {
+  border-radius: 0px;
+  /* background: linear-gradient(45deg, #ffffff, #e6e6e6); */
+  box-shadow: 7px -7px 3px #dedede, -7px 7px 3px #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+.roundStyle {
+  animation: pulse 2s infinite;
+  transition: box-shadow 0.3s ease;
+
+  /* border-radius: 50%; */
+  /* background: linear-gradient(315deg, #ffffff, #e6e6e6); */
+  box-shadow: -5px -5px 10px #0dbd65, 5px 5px 10px #19b756;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.roundStyle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease;
+}
+.bg-dark .contactStyle {
+  /* border-radius: 50px; */
+  background: linear-gradient(45deg, #211f20, #282425);
+  box-shadow: 6px -6px 0px #1d1b1b, -6px 6px 0px #2d292b;
+  transition: box-shadow 0.3s ease;
+  /* width: 100%; */
+}
+
+.bg-dark .contactStyle:hover {
+  /* transform: scale(1.1); */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease;
+}
+.bg-dark .contactStyle:active {
+  transform: scale(1.1);
+  box-shadow: 0 0;
+  transition: transform 2s ease-in-out;
+}
+.bg-dark .footerStyle {
+  /* border-radius: 50px; */
+  background: linear-gradient(45deg, #211f20, #282425);
+  box-shadow: 6px -6px 0px #1d1b1b, -6px 6px 0px #2d292b;
+  transition: box-shadow 0.3s ease;
+}
+.bg-dark .contactElement {
+  /* border-radius: 50px; */
+  background: linear-gradient(45deg, #211f20, #282425);
+}
+.bg-dark .contactElement:hover {
+  /* transform: scale(1.1); */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 5s ease-in-out;
+}
+.bg-dark .contactElement:active {
+  transform: scale(1.1);
+  box-shadow: 0 0;
+  transition: transform 5s ease-in-out;
+}
+/* CSS */
+#barsIcon.rotated {
+  transform: rotate(270deg); /* Adjust the rotation angle as needed */
+  /* animation: pulse 2s infinite; */
+  transition: transform 5s ease-in-out; 
+  /* Add a smooth transition effect */
+}
+/* floatingIcons.css >>>>>>>>>>>>>>>>>>> */
+#whatsapp {
+  transition: transform 300ms ease-out 165ms;
+  position: fixed;
+  bottom: 29px;
+  left: 20px;
+  /* size: 50px; */
+  /* width: 50px;
+  height: 50px; */
+  z-index: 1000000;
+  /* size:translate(36px, 0px); */
+  /* background-color: invisible; */
+ 
+}
+
+#whatsapp:hover {
+  transform:  scale(1.1, 1.1);;
+}
+
+#call {
+  transition: transform 300ms ease-out 165ms;
+  position: fixed;
+  bottom: 29px;
+  right: 20px;
+  /* size: 50px; */
+  /* width: 50px;
+  height: 50px; */
+  z-index: 1000000;
+  /* size:translate(0px, 36px); */
+  /* background-color: invisible; */
+ 
+}
+
+#call:hover {
+  transform: scale(1.1, 1.1) ;;
+}
+/* >>>>>>>>>>>>>>>>>-----facebook icon-------->>>>>>>>>>>>>>>>>>>>>> */
+/* .instagram-icon {
+  color: #8a3ab9; /* Instagram purple */
+  #insta {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(255,0,0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255,0,0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+  #insta span {
+    margin: 10px;
+  }
+  
+  #insta::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  #insta:hover {
+    color: #fff;
+    border: 1px solid rgb(255,0,0);
+  }
+  
+  #insta:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+  }
+  

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- dir="rtl"  -->
+<!--  dir="rtl" -->
 <html  lang="ar">
     <head>
         <meta charset="utf-8" />
@@ -50,6 +50,112 @@
         }
     }
 
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< test css */
+    .btn-conteiner {
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: #1292e2;
+  --color-outline: #107fc4;
+  --color-shadow: #00000080;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover, .btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.icon-arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+  
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--color-background);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
      </style>
        
     </head>
@@ -69,8 +175,8 @@
                 <a class="navbar-brand" href="#page-top">
                     <i class="fa-solid fa-spa fa-2x" style="color: #0da041; vertical-align: middle;"></i>
                     <span style="font-family: 'Amiri', serif; font-size: 24px; color: white; vertical-align: middle;"> 
-                        خدمات تنسيق حدائق الإمارات
-                    </span>
+                        الرئيسية                  
+                      </span>
                 </a>
                 
                
@@ -86,10 +192,11 @@
                         <!-- <li class="nav-item"><a class="nav-link" href="#services"><i class="fa-brands fa-whatsapp fa-beat fa-2xl" style="color: #63E6BE;"></i></a></li> -->
                         <!-- <li class="nav-item"><a class="nav-link" href="#services"><i class="fab fa-whatsapp fa-2x" style="color: #25D366;"></i>
                         </a></li> -->
-                        <li class="nav-item"><a class="nav-link " href="#services">الخدمات</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">معرض الأعمال</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">حول</a></li>
+                        <li class="nav-item"><a class="nav-link " href="./grass.html">قسم العشب</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./waterFalls.html">قسم الشلالات </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./umbrellas.html">قسم المظلات</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#team">الفريق</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="./dicore.html"> قسم الديكور</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contactUs">اتصل بنا</a></li>
                         <li class="nav-item"><label class="switch" >
                             <span class= "sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
@@ -238,6 +345,8 @@
     </div>
 </section>
 
+<!-- <<<<<<<<<<<<<<<<<<<<<<              test <<<<<<<< -->
+
         <!-- Portfolio Grid-->
         <section class="page-section bg-light " id="portfolio">
             <div class="container">
@@ -248,400 +357,150 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-3 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
+                                <!-- <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/1.jpeg" alt="تصميم حديقة يجسد الأحلام ويضفي سحرًا خاصًا"
+                                </div> -->
+                                <img class="img-fluid" style="border-radius: 15px;"src="assets/grass/12.jpeg" alt="تصميم حديقة يجسد الأحلام ويضفي سحرًا خاصًا"
                                 loading="lazy"/>
                             </a>
                             <div class="portfolio-caption">
                               
+                                <div class="portfolio-caption-heading text-info"> 
+                                    قسم العشب         
+                                </div>
                                 <div class="portfolio-caption-subheading text-dark">    تصميم حديقة يجسد الأحلام ويضفي سحرًا خاصً </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted"> 
-                                    تصميم حديقة يجسد الأحلام ويضفي سحرًا خاصًا
-                                </div> -->
                                 <div class="row mt-1" >
-                                        <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-        <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
+                                    <div class="btn-conteiner">
+                                        <a class="btn-content" href="./grass.html">
+                                          <span class="btn-title">المزيد</span>
+                                          <span class="icon-arrow">
+                                            <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                              </g>
+                                            </svg>
+                                          </span> 
                                         </a>
+                                      </div>
                                 </div>
                             </div>
 
                           
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-3 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
+                                <!-- <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img loading="lazy"class="img-fluid" src="assets/client/42.jpeg"  alt=" بلمسات فريدةتحسين المساحات الخارجية" loading="lazy" />
+                                </div> -->
+                                <img style="border-radius: 15px;" loading="lazy"class="img-fluid" src="assets/waterFalls/3.jpeg"  alt=" بلمسات فريدةتحسين المساحات الخارجية" loading="lazy" />
                             </a>
                             <div class="portfolio-caption">
                                 
-                                <div class="portfolio-caption-subheading text-dark" >
+                                <div class="portfolio-caption-heading text-info"> 
+                                    قسم الشلالات                         
+                                       </div> 
+                                       <div class="portfolio-caption-subheading text-dark" >
                                     تحسين المساحات الخارجية بطابع فاخر وفريد
                                 </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">
-                                    تحسين أماكن الاستراحة بلمسات فريدة
-                                </div> -->
                                 <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
+                                    <div class="btn-conteiner">
+                                        <a class="btn-content" href="./waterFalls.html">
+                                          <span class="btn-title">المزيد</span>
+                                          <span class="icon-arrow">
+                                            <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                              </g>
+                                            </svg>
+                                          </span> 
+                                        </a>
+                                      </div>
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-3 col-sm-6 mb-4">
                         <!-- Portfolio item 3-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
+                                <!-- <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/17.jpeg"  alt="عشب يضفي جمالًا وراحة لحديقتك" loading="lazy"/>
+                                </div> -->
+                                <img style="border-radius: 15px;" class="img-fluid" src="assets/umbrellas/20.jpeg"  alt="عشب يضفي جمالًا وراحة لحديقتك" loading="lazy"/>
                             </a>
                             <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading text-info"> 
+                                    قسم المظلات   
+                                      </div>
                                 <div class="portfolio-caption-subheading text-dark">
                                     تجربة لا مثيل لها مع تحسين المساحات الخارجية
                                 </div>
                                 <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
+                                    <div class="btn-conteiner">
+                                        <a class="btn-content" href="./umbrellas.html">
+                                          <span class="btn-title">المزيد</span>
+                                          <span class="icon-arrow">
+                                            <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                              </g>
+                                            </svg>
+                                          </span> 
+                                        </a>
+                                      </div>
                             </div>
                                 <!-- <div class="portfolio-caption-subheading text-muted">عشب يضفي جمالًا وراحة لحديقتك</div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                         <!-- Portfolio item 4-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
+                                <!-- <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/31.jpeg"  alt="زراعة أشجار لجمال طبيعي وسحر دائم" loading="lazy"/>
+                                </div> -->
+                                <img style="border-radius: 15px;" class="img-fluid" src="assets/dicore/6.jpeg"  alt="زراعة أشجار لجمال طبيعي وسحر دائم" loading="lazy"/>
                             </a>
                             <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading text-info"> 
+                                    قسم الديكور
+                                </div>
                                 <div class="portfolio-caption-subheading text-dark">تحسين المساحات الخارجية بلمسة من الرفاهية</div>
                                 <!-- <div class="portfolio-caption-subheading text-muted">زراعة أشجار لجمال طبيعي وسحر دائم</div> -->
                                 <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/5.jpeg"  alt="تحسين المساحات الخارجية" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark ">تجميل المساحات الخارجية بأسلوب فاخر ومميز</div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">تحسين أماكن الاستراحة بلمسات فريدة</div> -->
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/gardens/Aravaca_.jfif" alt="عشب دائم الجمال والراحة تركيب العشب" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">
-                                    تجميل خارجي بتفرد ورفاهية استثنائية                        
-                                </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">عشب دائم الجمال والراحة</div> -->
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
+                                    <div class="btn-conteiner">
+                                        <a class="btn-content" href="./dicore.html">
+                                          <span class="btn-title">المزيد</span>
+                                          <span class="icon-arrow">
+                                            <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                                <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                              </g>
+                                            </svg>
+                                          </span> 
+                                        </a>
+                                      </div>
                             </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                 
-                <div class="row mt-4">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/18.jpeg"  alt="تصاميم حدائق" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">
-                                    تجربة استثنائية مع تحسين المساحات الخارجية
-                                </div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">حدائق الأحلام مع تصاميم فريدة</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/43.jpeg"  alt="زهور ملونة" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">
-                                    لمسة راقية مع تجميل المساحات الخارجية
-                                </div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">قصة الألوان مع زهور ملونة</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/8.jpeg"  alt=" تجربة فاخرة مع تحسين المساحات الخارجية تحسين المساحات الخارجية"  loading="lazy" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">
-                                    تجميل خارجي بتفرد ورفاهية استثنائية
-                                </div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">تجربة فاخرة مع تحسين المساحات الخارجية</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/9.jpeg"  alt=" تحسين يمنح الحديقة لمسة فاخرةتحسين المساحات الخارجية" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">
-                                    رحلة فاخرة في تجميل المساحات الخارجية
-                                </div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal11">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/10.jpeg"  alt="تصاميم حدائق" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark ">تصاميم حديقة تجسد جمال الطبيعة
-                                </div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">تصاميم حديقة تجسد جمال الطبيعة
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal12">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/11.jpeg"  alt="لمسة فاخرة تحول المساحات الخارجية إلى تحفة فنية" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">لمسة فاخرة تحول المساحات الخارجية إلى تحفة فنية</div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Photography</div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 
-                <div class="row mt-4">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal13">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/12.jpeg"  alt="تجربة تحسين خارجية فاخرة وممتعة" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">تجربة تحسين خارجية فاخرة وممتعة</div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Illustration</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal14">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/13.jpeg"  alt="رفاهية لا تضاهى مع تجميل المساحات الخارجية" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">رفاهية لا تضاهى مع تجميل المساحات الخارجية</div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal15">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/20.jpeg"  alt="رحلة فاخرة في عالم تجميل المساحات الخارجية" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">رحلة فاخرة في عالم تجميل المساحات الخارجية</div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Identity</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal16">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/15.jpeg"  alt="رفاهية تحسين المساحات الخارجية بلمسة فاخرة" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">رفاهية تحسين المساحات الخارجية بلمسة فاخرة</div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Branding</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal17">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/16.jpeg"  alt="تجميل خارجي بتفرد وفخامة استثنائية" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark ">تجميل خارجي بتفرد وفخامة استثنائية</div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Website Design</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal18">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/client/34.jpeg"  alt="تجربة تجميل خارجية تنبض بالفخامة" loading="lazy"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-subheading text-dark">تجربة تجميل خارجية تنبض بالفخامة</div>
-                                <div class="row mt-1" >
-                                    <a href="tel:+971547607344" class="btn btn-lg" style="margin-bottom: 0; width:100%; display:flex; align-items:center; justify-content: center;">
-    <span style="display:flex; flex-direction:row; align-content: normal;"><img style="width:25px; height:35px;" src="./assets/icons8-phone (1).svg" alt="phone call"> +971547607344</span>
-                                    </a>
-                            </div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Photography</div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- About-->
@@ -720,11 +579,8 @@
                 </ul>
             </div>
         </section>
-  
 
-
-
-<section id="contactUs" class="container mt-5 mx-auto contactStyle">
+        <section id="contactUs" class="container mt-5 mx-auto contactStyle">
     <h2 class="text-center contactElement">اتصل بنا</h2>
 
     <!-- Contact Details and Map -->
@@ -733,8 +589,11 @@
         <div class="col-md-5">
             <div class="contact-details mt-4 ">
                 <!-- <p>البريد الإلكتروني: info@example.com</p> -->
-                <p class="contactElement" >الهاتف: 
-                    +971547607344</p>
+                <p class="contactElement" style="display: flex; flex-direction: row;">
+                    <div> :الهاتف </div>
+                    <div> +971547607344 </div>
+                </p>
+                
                 <p class="contactElement">أبو ظبي
                     الإمارات العربية المتحدة</p>
 
@@ -779,9 +638,9 @@
             </div>
         </div>
     </div>
-</section>
+        </section>
 
-        <!-- Team-->
+        <!-- Team actually this is footer -->
         <section class="page-section bg-light" id="team">
             <footer class="footer py-4 footerStyle">
                 <div class="container">
@@ -1532,10 +1391,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-
-
-
-       
     </body>
 </html>
